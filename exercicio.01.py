@@ -1,4 +1,4 @@
-def  somar_pares():
+def  somar_pares(lista):
     total = 0
     for i in lista:
         if i %2 == 0:
