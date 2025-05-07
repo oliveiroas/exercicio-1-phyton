@@ -1,3 +1,5 @@
+
+
 def adicionar_aluno(nome, email, serie, nota01, nota02, nota03,):
     dados_alunos = []  
     aluno = {
