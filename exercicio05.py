@@ -1,18 +1,21 @@
+from exercicio04 import calcular_media
 
+def adicionar_aluno(nome, email, serie, nota01=0, nota02=0, nota03=0): 
+    alunos = []
 
-def adicionar_aluno(nome, email, serie, nota01, nota02, nota03,):
-    dados_alunos = []  
+    notas = [nota01, nota02, nota03]    
+
     aluno = {
         "nome": nome,
         "email": email,
         "serie": serie,
-        "nota": [nota01, nota02, nota03]
+        "nota": notas,
+        "media": calcular_media
     }
-    dados_alunos.append(aluno)
-    return dados_alunos
 
-print(adicionar_aluno("Vinicius", "viniciuscabulosao@gmail.com", "2b série", 10, 10, 10))
+    alunos.append(aluno)
 
+    return alunos
 
-
+print(adicionar_aluno("Vinicius", "viniciuscabulosao@gmail.com", "2b série"))
 
