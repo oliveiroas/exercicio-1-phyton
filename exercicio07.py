@@ -1,8 +1,19 @@
-from exercicio04 import calcular_media
+import json
+import os
 
-cadastros = []
 
-def obter_dados_cadastro():
+db_clientes="db_clientes.json"
+# clientes = []
+def  carregar_dados():1
+    if os.path.exists(db_clientes):
+        with open(db_clientes, "r", encoding= "utf-8") as arq_json:
+            return json.load(arq_json)
+    else:
+        return  []
+
+clientes = carregar_dados()
+print(clientes)
+
     nome_ = input("INFORME O NOME COMPLETO PARA O CADASTRO: ")
     cpf = int(input("INFORME O CPF PARA O CADASTRO: "))
     rg = int(input("INFORME O RG PARA O CADASTRO: "))
