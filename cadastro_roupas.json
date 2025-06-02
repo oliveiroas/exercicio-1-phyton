@@ -1,0 +1,11 @@
+[
+    {
+        "id_roupa": 1,
+        "nome_roupa": "roupa jose",
+        "descricao_roupa": "camisa azul",
+        "tamanho": "p",
+        "cor": "azul",
+        "valor": 10.0,
+        "quantidade": 1
+    }
+]

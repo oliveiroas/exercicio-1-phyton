@@ -12,9 +12,9 @@ def carregar_dados():
 
 def obter_dados_agendamento():
     nome_cliente = input("Informe o Nome do Cliente: ")
-    servico_desejado = input("Informe o Serviço Desejado: ")
-    data_agendamento = input("Informe a Data do Agendamento (DD/MM/AAAA): ")
-    horario_agendamento = input("Informe o Horário do Agendamento (HH:MM): ")
+    servico_desejado = input("Informe o Serviço Des                             ejado: ")
+    data_agendamento = input("Informe a Data do Agendamento (//): ")
+    horario_agendamento = input("Informe o Horário do Agendamento (:): ")
 
     agendamento = {
         "nome": nome_cliente,
@@ -66,6 +66,5 @@ def iniciar_sistema():
             break
         else:
             print("Opção inválida, escolha uma das opções no menu.")
-
 if __name__ == "__main__":
     iniciar_sistema()
